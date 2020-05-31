@@ -7,7 +7,7 @@ import java.awt.event.KeyEvent;
 import java.util.Random;
 
 
-public class PrzykladyZBotem {
+public class Mybot {
     public static void main(String[] args) throws IOException, AWTException {
         String nazwa = "notepad.exe";
         Runtime run = Runtime.getRuntime();
