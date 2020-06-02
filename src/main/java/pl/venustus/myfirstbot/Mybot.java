@@ -6,6 +6,7 @@ import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.awt.Robot; 
 import java.awt.event.KeyEvent;
+import java.time.LocalDateTime;
 import java.util.Random;
 
 
@@ -30,11 +31,12 @@ public class Mybot {
         robot.keyPress(KeyEvent.VK_E); 
         robot.keyPress(KeyEvent.VK_M); */
         Random r = new Random();
-        for (int i=0; i<10; i++){
+        for (int i=0; i<100; i++){
             robot.mouseMove(r.nextInt(1200),r.nextInt(800));
             robot.mouseRelease(InputEvent.BUTTON3_DOWN_MASK);
             robot.mouseRelease(InputEvent.BUTTON3_DOWN_MASK);
-            robot.setAutoDelay(900);
+            robot.setAutoDelay(2000);
+            System.out.println(i + " " + LocalDateTime.now());
         }
     }
 }
